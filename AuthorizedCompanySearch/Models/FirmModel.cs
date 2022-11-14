@@ -6,12 +6,12 @@ namespace AuthorizedCompanySearch.Models
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public int FirmId { get; set; }
         [Required]
         public string Name { get; set; }
         public string Title { get; set; }
         public bool HaveAuthority { get; set; } = false;
-        public IEnumerable<PersonelModel> Personel { get; set; }
+        public virtual IEnumerable<PersonelModel> Personel { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }

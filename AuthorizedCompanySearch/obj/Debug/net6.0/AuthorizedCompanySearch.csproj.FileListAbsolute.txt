@@ -6,7 +6,14 @@ C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySear
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\AuthorizedCompanySearch.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\AuthorizedCompanySearch.pdb
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Humanizer.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -23,6 +30,7 @@ C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySear
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -62,4 +70,3 @@ C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySear
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\obj\Debug\net6.0\AuthorizedCompanySearch.pdb
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\obj\Debug\net6.0\AuthorizedCompanySearch.genruntimeconfig.cache
 C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\obj\Debug\net6.0\ref\AuthorizedCompanySearch.dll
-C:\Users\LENOVO-METIN\source\repos\AuthorizedCompanySearch\AuthorizedCompanySearch\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

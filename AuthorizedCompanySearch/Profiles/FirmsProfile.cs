@@ -9,7 +9,8 @@ namespace AuthorizedCompanySearch.Profiles
         public FirmsProfile()
         {
             //source -> destination
-            CreateMap<FirmModel, FirmReadDtos>();
+            CreateMap<FirmModel, FirmReadDtos>().ReverseMap();
+            CreateMap<PersonelModel, PersonelReadDtos>();
 
         }
     }

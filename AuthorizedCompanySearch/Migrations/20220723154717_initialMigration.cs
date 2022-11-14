@@ -4,15 +4,15 @@
 
 namespace AuthorizedCompanySearch.Migrations
 {
-    public partial class İnitialMigration : Migration
+    public partial class initialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "FirmModels",
+                name: "Firms",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    FirmId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -26,45 +26,62 @@ namespace AuthorizedCompanySearch.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FirmModels", x => x.Id);
+                    table.PrimaryKey("PK_Firms", x => x.FirmId);
                 });
 
             migrationBuilder.CreateTable(
-                name: "PersonelModels",
+                name: "Personels",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    personelId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FirmId = table.Column<int>(type: "int", nullable: false),
-                    FirmModelId = table.Column<int>(type: "int", nullable: false)
+                    FirmModelFirmId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PersonelModels", x => x.Id);
+                    table.PrimaryKey("PK_Personels", x => x.personelId);
                     table.ForeignKey(
-                        name: "FK_PersonelModels_FirmModels_FirmModelId",
-                        column: x => x.FirmModelId,
-                        principalTable: "FirmModels",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        name: "FK_Personels_Firms_FirmModelFirmId",
+                        column: x => x.FirmModelFirmId,
+                        principalTable: "Firms",
+                        principalColumn: "FirmId");
+                });
+
+            migrationBuilder.InsertData(
+                table: "Firms",
+                columns: new[] { "FirmId", "Address", "Authority", "Email", "FirmPerformansScore", "GasOpenningPercentage", "HaveAuthority", "Name", "Phone", "Title" },
+                values: new object[,]
+                {
+                    { -2, "ankara", "mehmet", "mehmet@subilgi.com", 90.0, 60.0, true, "Subilgi", "0312987454", "Subilgi" },
+                    { -1, "ankara", "mehmet2", "mehmet@subilgi.com", 30.0, 50.0, true, "Subilgi2", "0312987454", "Subilgi2" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Personels",
+                columns: new[] { "personelId", "FirmId", "FirmModelFirmId", "Name", "Phone", "Surname" },
+                values: new object[,]
+                {
+                    { -2, -1, null, "mehmet", "0312945", "sunbul" },
+                    { -1, -1, null, "mehmet2", "03129342", "sunbul2" }
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_PersonelModels_FirmModelId",
-                table: "PersonelModels",
-                column: "FirmModelId");
+                name: "IX_Personels_FirmModelFirmId",
+                table: "Personels",
+                column: "FirmModelFirmId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PersonelModels");
+                name: "Personels");
 
             migrationBuilder.DropTable(
-                name: "FirmModels");
+                name: "Firms");
         }
     }
 }

@@ -12,7 +12,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+// Add Cors
+builder.Services.AddCors();
+builder.Services.AddCors(options =>
+     options.AddDefaultPolicy(builder =>
+     builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+
 builder.Services.AddScoped<IFirmRepo, FirmRepo>();
+builder.Services.AddScoped<IPersonelRepo, PersonelRepo>();
 builder.Services.AddDbContext<FirmDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("FirmConnection")
     ));
@@ -27,10 +34,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors();
+//app.UseHttpsRedirection();
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 

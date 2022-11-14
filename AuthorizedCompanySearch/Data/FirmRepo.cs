@@ -10,14 +10,26 @@ namespace AuthorizedCompanySearch.Data
         {
             _context = context;
         }
+
+        public void AddFirm(FirmModel model)
+        {
+            
+            if (model != null)
+            {
+              var result =   _context.Firms.Add(model);
+                SaveChanges();
+            }
+            
+        }
+
         public IEnumerable<FirmModel> GetAllFirm()
         {
-            return _context.FirmModels.ToList();
+            return _context.Firms.ToList();
         }
 
         public FirmModel GetFirmById(int id)
         {
-            return _context.FirmModels.FirstOrDefault(f => f.Id == id);
+            return _context.Firms.FirstOrDefault(f => f.FirmId == id);
         }
 
         public bool SaveChanges()

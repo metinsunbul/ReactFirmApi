@@ -7,6 +7,7 @@ namespace AuthorizedCompanySearch.Data
         IEnumerable<FirmModel> GetAllFirm();
         FirmModel GetFirmById(int id);
 
+        void AddFirm(FirmModel model);
         bool SaveChanges();
 
     }
