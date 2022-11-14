@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LrhKfXkdYhJBJy0ctKXxU0ujHD4CTSAukVKnB223lKakftkXeyD0Bs+A0e/EjR3cZOkoENqAMPIFjHgi5ScN1A==",
+  "dgSpecHash": "sBEsKYbjNrms48uWK73UzcXFObTB3KekRJl/d58n67fZv6GNt6nlk806+XM86KU8Q7mSet4mUKT8p4F7AuewhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO-METIN\\source\\repos\\AuthorizedCompanySearch\\AuthorizedCompanySearch\\AuthorizedCompanySearch.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO-METIN\\Desktop\\GitMetin\\ReactFirmApi\\AuthorizedCompanySearch\\AuthorizedCompanySearch.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO-METIN\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO-METIN\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
