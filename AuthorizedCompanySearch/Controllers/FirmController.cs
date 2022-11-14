@@ -17,6 +17,7 @@ namespace AuthorizedCompanySearch.Controllers
         private readonly IPersonelRepo _personelRepo;
         private readonly IMapper _mapper;
 
+        //metin baska test
         public FirmController(IFirmRepo firmRepo, IPersonelRepo personelRepo, IMapper mapper)
         {
 
