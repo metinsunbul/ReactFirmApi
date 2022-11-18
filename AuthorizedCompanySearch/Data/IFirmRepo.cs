@@ -8,6 +8,7 @@ namespace AuthorizedCompanySearch.Data
         FirmModel GetFirmById(int id);
 
         void AddFirm(FirmModel model);
+        bool DeleteFirm(int id);
         bool SaveChanges();
 
     }

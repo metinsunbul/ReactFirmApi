@@ -60,6 +60,15 @@ namespace AuthorizedCompanySearch.Controllers
             return Ok("Firm has been added"); 
         }
 
-       
+
+        [HttpDelete]
+        public ActionResult Delete(int id)
+        {
+            if(_firmRepo.DeleteFirm(id))
+                return Ok("Firm with " + id + " has been deleted");
+            return  Ok("Firm with " + id + " has not been deleted");
+        }
+
+
     }
 }

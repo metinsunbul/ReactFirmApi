@@ -22,6 +22,28 @@ namespace AuthorizedCompanySearch.Data
             
         }
 
+        public bool DeleteFirm(int id)
+        {
+            var firmToDelete = GetFirmById(id);
+
+            if (DeleteFirm != null)
+            {
+                try
+                {
+                    _context.Firms.Remove(firmToDelete);
+                    return SaveChanges();
+                }
+                catch (Exception)
+                {
+
+                   return false;
+                }
+                 
+            }
+            return false;
+            
+        }
+
         public IEnumerable<FirmModel> GetAllFirm()
         {
             return _context.Firms.ToList();
